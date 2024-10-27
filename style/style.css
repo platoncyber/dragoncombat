@@ -1,0 +1,326 @@
+.app{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+.app_display{
+    width: 400px;
+    height: 800px;
+    border-radius: 50px;
+    background-color: #212429da;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+}
+
+.display_header_other{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.display_header_name{
+    align-self: center;
+}
+
+.display_header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    color: white;
+    
+}
+
+.display_main{
+    width: 100%;
+    height: 80%;
+    border-radius: 15px 15px 0px 0px ;
+    border-top:  3px solid red;
+    box-shadow: 0px -25px 100px red ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+body{
+    margin:0;
+
+}
+
+.greating{
+width: 100vw;
+height: 100vh;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+animation: greating 6s 1;
+}
+
+
+
+
+
+.display_nav{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11px;
+}
+
+
+.display_nav div{
+    width: 117px;
+    height: 50px;
+    background-color: #32363c;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+.display_wallet img{
+    width: 60px;
+}
+
+.display_wallet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#wallet_coin{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.display_progress{
+    color: white;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.level_bar{
+    overflow: hidden;
+    width: 368px;
+    height: 9px;
+    border-radius: 30px;
+    border: 1px solid gray;
+
+}
+
+.level_progress{
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(120deg, #22ff00, #C597CC, #2f39A3);
+    transition: all .2s  ease;
+
+}
+
+
+
+.display_tap{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+    border: 10px solid #9e3576;
+    background: linear-gradient(#9e3576, #481c3b);
+
+}
+
+.display_tap img{
+    width: 247px;
+}
+
+
+
+.display_energy{
+    font-size: 11px;
+    color: white;
+    margin: 0 auto;
+
+
+}
+
+.display_energy img{
+    width: 10px;
+}
+
+
+.display_footer{
+    width: 80%;
+    display: flex;
+    justify-content:space-around;
+    margin: 0 auto;
+    color: white;
+    font-size: 11px;
+    align-items: center;
+    background-color: #32363c;
+    border-radius: 15px;
+    padding-top: 10px;
+    
+}
+
+.display_footer div{
+    transition: all .2s ease;
+    cursor:pointer;
+
+}
+
+.display_footer div:hover{
+    transform: translateY(-10px);
+}
+
+
+.tap_mod{
+    transform: skew(0.3deg);
+}
+
+
+
+
+
+.money{
+    z-index: 1000;
+    width: 50px;
+    animation: moneyTap 1s 1;
+    position: absolute;
+}
+
+
+
+
+@keyframes moneyTap{
+    0% {transform: translateY(0px);}
+    100%{
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes greating{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+
+}
+
+
+
+
+@media screen and (max-width : 376px){
+
+    .app_display{
+        height: 667px;
+        width: 375px;
+        border-radius: 50px;
+        background-color: #212429da;
+        backdrop-filter: blur(15px);
+        overflow: hidden;
+    
+    }
+
+    .display_tap{
+        overflow: hidden;
+        width: 187px;
+        height: 187px;
+        border-radius: 50%;
+        border: 10px solid #9e3576;
+        background: linear-gradient(#9e3576, #481c3b);
+    }
+    
+
+    .display_tap img{
+        width: 157px;
+    }
+
+    .level_bar{
+        overflow: hidden;
+        width: 350px;
+        height: 9px;
+        border-radius: 30px;
+        border: 1px solid gray;
+    
+    }
+    
+    .level_progress{
+        height: 100%;
+        width: 40%;
+        background: linear-gradient(120deg, #22ff00, #C597CC, #2f39A3);
+        transition: all .2s  ease;
+    
+    }
+    
+
+    .display_footer{
+        width: 70%;
+        display: flex;
+        justify-content:space-around;
+        margin: 0 auto;
+        color: white;
+        font-size: 11px;
+        align-items: center;
+        background-color: #32363c;
+        border-radius: 15px;
+        padding-top: 10px;
+        
+    }
+    
+    .display_footer div{
+        transition: all .2s ease;
+        cursor:pointer;
+    
+    }
+    
+    .display_footer div:hover{
+        transform: translateY(-5px);
+    }
+    
+    
+}
+
+
+
+@media screen and (max-width :375px){
+    .app_display{
+        width: 350px;
+        height: 100vh;
+    }
+}
+
+
+@media screen and (max-width : 1024px){
+    .app_display{
+        width: 760px;
+        height: 100vh;
+    }
+}
