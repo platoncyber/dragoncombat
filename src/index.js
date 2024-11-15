@@ -25,7 +25,7 @@ const data = {
 function handleGreeting(){
     let div = document.createElement('div');
     let img = document.createElement('img');
-    img.src = '../img/hamdter_poster.png';
+    img.src = './img/hamdter_poster.png';
     div.classList.add('greating');
     
 
@@ -59,7 +59,7 @@ if(data.energy > 0){
 
 
  const money = document.createElement('img');
- money.src = '../img/hamster_coin.png';
+ money.src = './img/hamster_coin.png';
 
  money.classList.add('money');
 
