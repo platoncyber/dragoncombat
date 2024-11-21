@@ -40,7 +40,7 @@ const data = {
 function handleGreeting(){
     let div = document.createElement('div');
     let img = document.createElement('img');
-    img.src = '../img/hamdter_poster.png';
+    img.src = './img/hamdter_poster.png';
     div.classList.add('greating');
     let value = prompt('введите ваше имя')
 
@@ -101,7 +101,7 @@ if(data.energy > 0){
 
 
  const money = document.createElement('img');
- money.src = '../img/hamster_coin.png';
+ money.src = './img/hamster_coin.png';
 
  money.classList.add('money');
 
@@ -204,4 +204,7 @@ energyRecovery();
 
 nav_mine.addEventListener('click',changeToMenu);
 nav_game.addEventListener('click',changeToGame);
+hamster.addEventListener('click',handleTap);
+
+
 hamster.addEventListener('click',handleTap);
