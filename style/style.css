@@ -324,3 +324,131 @@ animation: greating 6s 1;
         height: 100vh;
     }
 }
+
+
+
+.mine_content{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 40%;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.mine_cards{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mine_nav{
+    border-radius: 15px;
+    background-color: #32363C;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 70%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.mine_card{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 110px;
+    border-radius: 15px;
+    background-color: #32363C;
+   color: white;
+}
+
+.card_top{
+    font-size: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    height: 60%;
+}
+
+.card_bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 9px;
+    height: 100%;
+}
+
+.card_top img{
+    width:15px;
+}
+
+.card_bottom img{
+    width: 25px;
+  
+}
+
+
+.display_content{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.buy_card{
+    cursor: pointer;
+}
+
+
+.buy_display{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    border-top:2px solid gold ;
+    box-shadow: 0px -10px 10px gold;
+    height: 30vh;
+    position: absolute;
+    bottom: 0px;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    animation: slide-up 1s 1;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+
+.buy_btn{
+    width: 65%;
+    height: 20%;
+    border-radius:10px ;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+}
+
+@keyframes slide-up{
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
